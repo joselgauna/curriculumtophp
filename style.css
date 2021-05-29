@@ -1,0 +1,259 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Navigation */
+
+.nav-container {
+    background: #FFFFFA;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    height: 72px;
+    margin-top: -65px;
+    z-index: 500;
+    position: relative;
+}  
+
+.wrapper {
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+nav { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+color: #000000;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0%;
+}
+
+.nav-items li a {
+    color: #000000;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+/* Header */
+
+.header-container {
+    background: rgba(1, 132, 127, 0.5) url("images/bg-shape.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    color: #021718;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-size: 24px;
+    line-height: 42px;
+    color: #021718;
+    width: 354px;
+
+    margin-bottom: 48px;
+}
+
+header a {
+    font-size: 24px;
+    color: #FFFFFA;
+    text-decoration: none;
+
+    background: #4952A6;
+    border-radius: 8px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+
+.sobre-mi {
+text-align: center;
+}
+
+.estudios {
+    text-align: center;
+}
+section p{
+    background: rgba(73, 82, 166, 0.8);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    font-size: 20px;
+    line-height: 40px;
+    color: #021718;
+    width: 500px;
+
+    margin-bottom: 50px;
+
+    width: auto;
+    height: 300px;
+    left: auto;
+    top: auto;
+    color: #FFFFFA;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #07393C;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    text-align: center;
+    color: white;
+}
+
+/* Search Box */
+
+.search-box {
+width: 1200px; 
+margin: 0 auto;
+text-align: right;
+position: relative;
+top: 0;
+
+transition: 300ms;
+}
+
+.search-box.active {
+    top: 72px;
+}
+
+.search-box input {
+    background: #FFFFFA;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 8px 8px;
+
+    font-size: 24px;
+    line-height: 42px; 
+    border: 0;
+    padding: 12px 48px;
+}
+
+.search-box input::placeholder {
+    color: b3b3b3;
+}
+
+/* Search & Close buttons */
+
+.nav-btn-container {
+    display: flex;
+    position: relative;
+}
+
+.nav-btn-container img {
+    position: absolute;
+}
+
+.nav-btn-container .close-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 300ms;
+}
+
+.nav-btn-container .search-btn{
+    transition: 300ms;
+}
+
+.nav-btn-container.active .search-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+}
+
+.nav-btn-container.active .close-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.contacto { 
+    text-align: center;
+}
+.contacto input {
+    font-size: 24px;
+    line-height: 42px; 
+    border: 50;
+    padding: 10px 10px;
+
+    background: #FFFFFA;
+border-radius: 50px;
+margin: 12px;
+}
+
+.contacto .submit {
+    background: #4952A6;
+border-radius: 8px;
+}
+article {
+
+}
+
+section input {
+    width: 380px;
+    height: 234px;
+
+background: #FFFFFA;
+border-radius: 30px;
+}
+article a {
+    font-size: 24px;
+    color: #FFFFFA;
+    text-decoration: none;
+
+    background: #4952A6;
+border-radius: 8px;
+padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+    margin: 15px;
+}
+/* Hidden Items */
+
+.search-box {
+    /*display: none; */
+}
