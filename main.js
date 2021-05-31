@@ -1,14 +1,8 @@
-const searchBox = document.querySelector(".search-box");
-const navBtnContainer = document.querySelector(".nav-btn-container");
-const searchBtn = document.querySelector(".search-btn");
-const closeBtn = document.querySelector(".close-btn");
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-searchBtn.addEventListener("click", () => {
-    searchBox.classList.add("active");
-    navBtnContainer.classList.add("active");
-});
+navToggle.addEventListener("clicl", () => {
+    navMenu.classList.toggle(".nav-menu_visible");
 
-closeBtn.addEventListener("click", () => {
-    searchBox.classList.remove("active");
-    navBtnContainer.classList.remove("active");
+
 });

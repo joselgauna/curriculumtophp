@@ -154,22 +154,31 @@ body {
     background-position: right;
     background-size: contain;
     display: flex;
-    align-items: center;
+ 
+ 
     flex-wrap: wrap;
-    padding: 0.5rem;
+    padding: 1em 0;
 }
 
 header {
-    display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
+    position: relative; 
+    line-height: 30px;
+    margin: .5em;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+div .hero-image {
+    
+    width: 100%;
     position: relative;
-    min-width: 320px;
-    flex: 1 1 200px;
 }
 
 header h1 {
+   
     position: relative;
     font-weight: 700;
     font-size: 64px;
@@ -177,20 +186,23 @@ header h1 {
     color: #021718;
     margin-bottom: 2rem;
     text-align: left;
+    width: 100%;
 }
 
 header p {
+    display: flex;
     position: relative;
     font-size: 21px;
     line-height: 42px;
     color: #021718;
-    width: 354px;
+    width: 100%;
     flex-wrap: wrap;
     margin-bottom: 48px;
     text-align: left;
 }
 
 header a {
+    display: flex;
     position: relative;
     font-size: 24px;
     color: #FFFFFA;
@@ -201,6 +213,8 @@ header a {
     padding: 12px 48px;
     display: inline-block;
     transition: 300ms;
+    margin: 1rem;
+    
 }
 
 header a:hover {
@@ -211,51 +225,58 @@ header a:hover {
 /* Main */
 
 .sobre-mi {
+    display: flex;
+    flex-wrap: wrap;
     position: center;
     text-align: center;
     padding: 1rem;
     margin: auto;
+    width: 100%;
 }
 
 .estudios {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     padding: 1rem;
     margin: auto;
+    width: 100%;
 }
 
 main h2 {
+    display: flex;
     margin: 1rem;
     padding: 1rem;
+    width: 100%;
 }
 
 .sobre-mi p{
-    
+    display: flex;
     font-size: 24px;
     line-height: 30px;
     color: #021718;
-    width: 80%;
+    
     color: #FFFFFA;
     background: rgba(73, 82, 166, 0.8);
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     position: relative;
-    display: flex;
     text-align: left;
     padding: 1rem;
 }
 
 .estudios p{
-    
+    display: flex;
     font-size: 24px;
     line-height: 30px;
     color: #021718;
-    width: 80%;
+
     color: #FFFFFA;
     background: rgba(73, 82, 166, 0.8);
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     position: relative;
-    display: flex;
+
     text-align: left;
     padding: 1rem;
 }
@@ -274,9 +295,11 @@ main h2 {
 /* Contacto */
 
 .contacto { 
-    text-align: center;
+
     flex: auto;
-    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
 }
 .contacto input {
     font-size: 24px;
@@ -287,11 +310,13 @@ main h2 {
     background: #FFFFFA;
 border-radius: 50px;
 margin: 12px;
+
 }
 
 .contacto .submit {
     background: #4952A6;
 border-radius: 8px;
+align-items: center;
 }
 article {
 
