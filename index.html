@@ -18,13 +18,13 @@
                 </button>
                 <ul class="nav-menu">
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">Sobre mi</a>
+                        <a href="#sobre-mi" class="nav-menu-link">Sobre mi</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">Estudios</a>
+                        <a href="#estudios" class="nav-menu-link">Estudios</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">Contacto</a>
+                        <a href="#contacto" class="nav-menu-link">Contacto</a>
                     </li>
                 </ul>
         </nav>
@@ -38,7 +38,7 @@
                     <p>
                         Soy Ingeniero Electronico y estudiante de programacion web
                     </p>
-                    <a href="#">
+                    <a href="#contacto">
                         Contactame
                     </a>
                 </div>
@@ -49,7 +49,7 @@
             
             <main class="main">
                 <div class="sobre-mi">
-                    <h2>Sobre mi</h2>
+                    <h2 id="sobre-mi">Sobre mi</h2>
                     <section>
                         <p>
                             Ahora mismo me encuentro retandome y a la vez experimentando sobre el desarrollo web, el cual considero muy importante, ademas, una carrera que vive exigiendo al usuario a conocer sobre los diferentes tipos de lenguaje, asi, llevando a la persona a un conocimiento aun mayor que le podra servir en un futuro cercano.
@@ -57,7 +57,7 @@
                     </section>
                 </div>
                 <div class="estudios">
-                    <h2>Estudios</h2>
+                    <h2 id="estudios">Estudios</h2>
                     <section>
                         <p>
                             Soy Ingeniero Electronico egresado de la Universidad Rafael Belloso Chacin (URBE). <br>
@@ -67,19 +67,19 @@
                         </p>
                     </section>
                 </div>
-                <div class="contacto">
-                    <article>
+                <div class="wrapper">
+                    <div class="title" id="contacto">
                         <h2>Contacto</h2>
-                        <input type="text" placeholder="Nombre y Apellio"> <br>
-                        <input type="text" placeholder="Correo Electronico"> <br>
-                        <section>
-                        <input type="text" placeholder="Mensaje">
-                        </section>
-                        <a href="#">
-                            Enviar
-                        </a>
-                    </article>
-                </div>
+                    </div>
+                        <div class="contactbody">
+                            <form action="enviar.php" method="POST" class="form-contact">
+                                <input type="text" class="name entry" name="nombre" placeholder="Nombre y Apellido" required> <br>
+                                <input type="text" class="email entry" name="mail" placeholder="Correo Electronico" required> <br>
+                                <textarea class="message entry" placeholder="Escribe aqui tu mensaje" required></textarea>
+                                <button class="submit entry" onclick="Gracias()">Enviar</button>
+                            </form>
+                        </div>
+                </div>    
             </main>    
         </div>
     </div>

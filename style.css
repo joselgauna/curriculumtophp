@@ -1,6 +1,7 @@
 * { 
     box-sizing: border-box;
-    margin: 0;
+    margin: 0%;
+    padding: 0%
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     height: 72px;
     position: relative;
-    top: 0;
+    top: -25px;
     left: 0;
     width: 100%;
 }  
@@ -141,11 +142,6 @@ body {
     }
 }
 
-
-
-
-
-
 /* Header */
 
 .header-container {
@@ -154,6 +150,7 @@ body {
     background-position: right;
     background-size: contain;
     display: flex;
+    min-width: 320px;
  
  
     flex-wrap: wrap;
@@ -164,16 +161,13 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative; 
-    line-height: 30px;
-    margin: .5em;
-    text-align: center;
-    align-items: center;
-    width: 50%;
+    line-height: 50px;
+
 }
 
-div .hero-image {
-    
-    width: 100%;
+header div .hero-image {
+    align-items: left;
+    width: 80%;
     position: relative;
 }
 
@@ -229,18 +223,28 @@ header a:hover {
     flex-wrap: wrap;
     position: center;
     text-align: center;
-    padding: 1rem;
-    margin: auto;
     width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+    width: 50%;
+    margin: 0 auto;
+    
 }
 
 .estudios {
     display: flex;
     flex-wrap: wrap;
+    position: center;
     text-align: center;
-    padding: 1rem;
-    margin: auto;
     width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 main h2 {
@@ -294,56 +298,93 @@ main h2 {
 
 /* Contacto */
 
-.contacto { 
-
-    flex: auto;
-    align-items: center;
-    width: 100%;
-
-}
-.contacto input {
+.title {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
     font-size: 24px;
-    line-height: 42px; 
-    border: none;
-    padding: 10px 10px;
+    color: black;
+}
 
+.wrapper{
+    width: 80%;
+    height: 50%;
+    margin: 5% auto 0 auto;
+}
+
+.form{
     background: #FFFFFA;
-border-radius: 50px;
-margin: 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: 45%;
+    height: 500px;
+    margin: 30px auto 0 auto;
+    padding: 10px 10px;
+    animation: bounce 1.5s infinite;
+}
+
+.name{
+    color: black;
+    width: 100%;
+    height: 30px;
 
 }
 
-.contacto .submit {
+::-webkit-input-placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+.name:hover{
+    height:30px;
+    width:100%;
+}
+
+.email {
+    height:30px;
+    width:100%;
+
+}
+
+.email:hover{
+    height:30px;
+    width:100%;
+}
+
+.message {
+    overflow: hidden;
+    height: 100px;
+    width:100%;
+
+}
+
+.message:hover{
+   height: 100px;
+    width:100%;
+}
+
+.submit{
+    border-radius:5px;
+    padding:10px;
     background: #4952A6;
-border-radius: 8px;
-align-items: center;
-}
-article {
+    border: none;
+    color: white;
+    width: 100px;
 
+    
 }
 
-section input {
-    width: 290px;
-    height: 10rem;
-
-background: #FFFFFA;
-border-radius: 30px;
-flex-wrap: wrap;
+.submit:hover{
+    box-shadow: 15px 15px 15px 5px white
 }
-article a {
-    font-size: 24px;
-    color: #FFFFFA;
-    text-decoration: none;
-    background: #4952A6;
 
-border-radius: 8px;
-padding: 12px 48px;
-    display: inline-block;
-    transition: 300ms;
-    margin: 15px;
-}
-/* Hidden Items */
-
-.search-box {
-    /*display: none; */
-}
+.entry{
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 25px 2px #AAA;
+    }
